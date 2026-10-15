@@ -23,7 +23,7 @@ def required_decel(gap, closing):
     closing_arr = np.asarray(closing, dtype=float)
     pos = closing_arr > 0
     safe_gap = np.where(gap_arr > 0, gap_arr, 1.0)
-    res = np.where(pos, (closing_arr ** 2) / (2.0 * safe_gap), 0.0)
+    res = np.where(pos, np.where(gap_arr > 0, (closing_arr ** 2) / (2.0 * safe_gap), np.inf), 0.0)
     if np.ndim(gap) == 0 and np.ndim(closing) == 0:
         return res.item()
     return res

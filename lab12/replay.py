@@ -117,6 +117,8 @@ def replay(segs, make_stream, mode="fastest", cost_seed=0, spike_prob=0.02, base
 def compare_with_tol(golden, new, atol=1e-3, rtol=1e-3):
     """Segment-by-segment comparison. A segment 'differs' if any command is outside atol + rtol * |golden|.
     Also reports how many segments are not bit-identical, to show why exact equality is the wrong test."""
+    golden = np.asarray(golden)
+    new = np.asarray(new)
     n_seg = len(golden)
     differing_segments = []
     not_bit_count = 0
