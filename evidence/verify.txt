@@ -26,7 +26,7 @@
 [PASS] agents: calibrated IDM driver and both rear-vehicle worlds present
 [PASS] gate: a decision for every candidate
 [PASS] fix.json agrees with gate.json on PercMLP+
-[PASS] unit tests: Ran 25 tests in 0.563s / OK
+[PASS] unit tests: Ran 25 tests in 0.612s / OK
 [PASS] REPORT.md has an MSSV (202602543)
 [PASS] MSSV in REPORT.md equals the student id used for the run
 [PASS] REPORT.md: 'Họ và tên' is filled
