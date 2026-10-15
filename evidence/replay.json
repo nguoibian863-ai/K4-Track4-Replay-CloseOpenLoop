@@ -1,0 +1,102 @@
+{
+  "student": {
+    "student_id": "202602543",
+    "split_seed": 7095,
+    "model_seed": 3814,
+    "v_ego": 10.0
+  },
+  "n_segments": 600,
+  "log_mb": 9.5,
+  "rerun_identical": true,
+  "rerun": {
+    "segments": 600,
+    "differ_beyond_tol": 0,
+    "not_bit_identical": 0,
+    "max_abs_diff": 0.0,
+    "atol": 0.001,
+    "rtol": 0.001,
+    "differing_segments": []
+  },
+  "refactor_float32": {
+    "segments": 600,
+    "differ_beyond_tol": 0,
+    "not_bit_identical": 600,
+    "max_abs_diff": 2.523654379160689e-05,
+    "atol": 0.001,
+    "rtol": 0.001,
+    "differing_segments": []
+  },
+  "behaviour_change_aeb": {
+    "segments": 600,
+    "differ_beyond_tol": 7,
+    "not_bit_identical": 7,
+    "max_abs_diff": 1.8407575407256296,
+    "atol": 0.001,
+    "rtol": 0.001,
+    "differing_segments": [
+      150,
+      195,
+      208,
+      222,
+      320,
+      334,
+      560
+    ]
+  },
+  "fastest": {
+    "frames": 59632,
+    "dropped": 0,
+    "late": 0,
+    "mode": "fastest",
+    "segments": 600,
+    "differ_beyond_tol": 0,
+    "not_bit_identical": 0,
+    "max_abs_diff": 0.0,
+    "atol": 0.001,
+    "rtol": 0.001,
+    "differing_segments": []
+  },
+  "realtime": {
+    "frames": 59632,
+    "dropped": 574,
+    "late": 582,
+    "mode": "realtime",
+    "segments": 600,
+    "differ_beyond_tol": 371,
+    "not_bit_identical": 374,
+    "max_abs_diff": 7.476981011039657,
+    "atol": 0.001,
+    "rtol": 0.001,
+    "differing_segments": [
+      0,
+      1,
+      2,
+      4,
+      6,
+      8,
+      9,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      22,
+      24,
+      25
+    ]
+  },
+  "summation_order_demo": {
+    "(0.1+0.2)+0.3": 0.6000000000000001,
+    "0.1+(0.2+0.3)": 0.6,
+    "float32_sum_forward_50k": 42.32094955444336,
+    "float32_sum_reversed_50k": 42.320655822753906,
+    "float32_sum_numpy_pairwise_50k": 42.32032775878906,
+    "relative_difference_forward_vs_reversed": 6.9405741669470444e-06
+  },
+  "note": "tolerance atol=1e-3 rtol=1e-3 on the commanded acceleration [m/s^2]; log values are rounded to 4 decimals"
+}
